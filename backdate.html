@@ -9,32 +9,56 @@
     <main>
         <article>
             <section>
-                <div class="pw-post-title">
-                    <h1>Backdating your Medium posts!</h1>
-                </div>
-                <p class="pw-post-body-paragraph">
-                    This is a test HTML page that you can import to Medium as 
-                    a template to backdate your post.
-                </p>
-                <p class="pw-post-body-paragraph">
-                    You'll know when you've successfully backdated your post
-                    by looking at the bottom of your article when you import
-                    to Medium: it should say something like: "Originally 
-                    published at *** on [Whatever your date is]."
-                </p>
-                <p class="pw-post-body-paragraph">
-                    If you enjoyed this tutorial and method, please 
-                    drop me a follow on 
-                    <a href="https://liaogg.medium.com">Medium</a>
-                    and 
-                    <a href="https://github.com/kevinMEH">Github.</a>
-                </p>
-                <p class="pw-post-body-paragraph">
-                    Thanks, and bye!
-                </p>
-            </section>
-        </article>
-    </main>
+    <h1>Setup A Collaborative Development Environment with Unity Cloud and Version Control</h1>
+    
+    <h2>Goal</h2>
+    <p>How to Set up your Plastic SCM and cloud build for your Unity project.</p>
+    
+    <h2>Audience</h2>
+    <p>This is a guide for Unity developers of all levels who want to collaborate with a team to build a project together.</p>
+    
+    <h2>Result</h2>
+    <p>Have your own build server running powered by Unity.</p>
+    
+    <h2>Assumption</h2>
+    <p>At least a beginner-level familiarity with setting up projects in Unity via the Unity hub. You already have updated the Unity hub and downloaded the Unity editor (the editor is downloaded from the Unity hub).</p>
+    <p>Download Unity Hub: <a href="https://unity.com/download" target="_blank">https://unity.com/download</a></p>
+    
+    <h2>Steps</h2>
+    
+    <h3>Part A: Make a Unity ID</h3>
+    <p>(Skip this part if you already have a Unity account)</p>
+    <ol>
+        <li>Go to the Unity website: <a href="https://unity.com/" target="_blank">https://unity.com/</a></li>
+        <li>Click the profile icon and select "Create Unity ID."</li>
+        <li>Follow the instructions on the page to create your ID and confirm your email.</li>
+        <li>Sign in again to make sure the ID works (you don't need Unity advanced for cloud control).</li>
+    </ol>
+    
+    <h3>Part B: Sign up for Unity DevOps/Create your Organization Server</h3>
+    <ol>
+        <li>Go to <a href="https://dashboard.unity3d.com/" target="_blank">https://dashboard.unity3d.com/</a> and sign in with your Unity account. This will open your Unity gaming dashboard.</li>
+        <li>Find the section for creating a project, which should say, “Create a project to get started with gaming services.” Click on "Create Project" and enter the project name in the pop-up. (Skip this step if you already have projects)</li>
+        <li>After you have a project, click on "DevOps" in the left navigation.</li>
+        <li>You should see a page that says, “No Unity version control organizations yet.” Click on "Sign up now."</li>
+        <li>This should open a new window for Unity DevOps. Complete the steps on top (Order > Your Info > Payment > Confirmation) to set up your Unity organization.</li>
+        <li><strong>Note:</strong> On the "Your Info" page, you will have an option to name your organization. By default, it's your email, but this can be changed.</li>
+    </ol>
+    <p>Cost of Using Unity Cloud: <a href="https://unity.com/products/unity-gaming-services/pricing" target="_blank">Unity Gaming Services Pricing - Start Building for Free | Unity</a></p>
+    
+    <h3>Part C: Set up Plastic SCM on Your Unity Project</h3>
+    <ol>
+        <li>Open Unity Hub and go to Settings > Preferences > Licenses, and make sure you have your respective license (Unity Free, Unity Pro, etc).</li>
+        <li>Click on "Installs" and install the editor version of your choice.</li>
+        <li>Now go to "Projects," click "New Project," and select a template of your choice.</li>
+        <li>In the Unity editor, go to Window > Plastic SCM to open the Plastic SCM window.</li>
+        <li>If you are not already signed in with your Unity ID, sign in and complete the first step in the SCM window.</li>
+        <li>Next, you will be asked to select the organization and server. By default, it should select the organization you created with DevOps. (If you have multiple organizations, you can choose them by clicking the three dots beside the server.)</li>
+        <li>Click "Create" to confirm, and the repository should be created and updated on the Unity Gaming Dashboard's DevOps section.</li>
+    </ol>
+                </section>
+            </article>
+        </main>
 </body>
 
 </html>
